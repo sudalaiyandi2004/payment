@@ -1,38 +1,125 @@
+/* General reset and body styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container for the app */
 .App {
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation styles */
+nav {
+  background-color: #3399cc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+nav li {
+  font-size: 18px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #2874a6;
+}
+
+/* Home page container */
+.shoe_container {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shoe_img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.shoe_name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.shoe_creator {
+  font-size: 18px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.shoe_price {
+  font-size: 20px;
+  color: #33cc33;
+  margin-top: 10px;
+}
+
+.buyBtn {
+  background-color: #3399cc;
   color: white;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.buyBtn:hover {
+  background-color: #2874a6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* About and Contact page styles */
+.page {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.page p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.page a {
+  font-size: 18px;
+  color: #3399cc;
+  text-decoration: none;
+}
+
+.page a:hover {
+  text-decoration: underline;
 }
