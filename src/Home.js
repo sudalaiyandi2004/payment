@@ -3,7 +3,7 @@ import axios from "axios";
 
 function Home() {
   const [shoe, setShoe] = useState({
-    name: "Training Shoes",
+    name: "Training Shoe",
     creator: "Nike",
     img: "https://images.pexels.com/photos/3490360/pexels-photo-3490360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     price: 1,
